@@ -1,0 +1,32 @@
+ALGORITHM 
+FUNCTION trier(n : INTEGER ,arr : ARRAY_OF INTEGER[]) : ARRAY_OF INTEGER;
+VAR
+    i,j : INTEGER;
+    verf : BOOLEAN;
+BEGIN
+     verf := true;
+    FOR i=0 FROM 1 TO arr.length-1 STEP 1  DO
+                IF (arr[i]>arr[i+1]) THEN
+                    //swap(arr[i]>arr[i+1]);
+                    temp = arr[i];
+                    arr[i]=arr[i+1];
+                    arr[i+1];
+                    verf := true;
+                END_IF
+            END_FOR
+            IF (verf == false) THEN
+                break;
+            END_IF
+    END_FOR
+    RETURN arr ;
+END
+
+
+
+VAR
+    set_declarations
+BEGIN
+    set_instructions
+END
+
+///Étant donné un entier N et une liste arr . Triez le tableau à l’aide de l’algorithme de tri à bulles.
